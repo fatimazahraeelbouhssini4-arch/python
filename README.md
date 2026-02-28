@@ -54,8 +54,3 @@ python/
     ├── ex4.py
     └── README.md
 
----
-
-**Étape 3 —** Cliquez sur **"Commit new file"** avec le message :
-```
-ajout README devoir1
