@@ -53,12 +53,6 @@ python/
     ├── ex3.py
     ├── ex4.py
     └── README.md
-```
-
----
-
-> Travail réalisé dans le cadre du cours Python - Bachelor IDAI
-```
 
 ---
 
