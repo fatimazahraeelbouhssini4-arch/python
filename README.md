@@ -124,9 +124,6 @@ myproject/
 │   ├── models.py
 │   ├── urls.py
 │   └── admin.py
-│
-├── templates/
-├── static/
 ```
 
 ---
