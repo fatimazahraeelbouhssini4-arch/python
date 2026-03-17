@@ -1,88 +1,188 @@
-# Python — Travaux Pratiques
-**Nom :** Fatima Zahra Elbouhssini  
-**Filière :** Bachelor IDAI  
-**Date :** Février 2026
+# Python & Django — Travaux Pratiques
+
+**Nom :** Fatima Zahra Elbouhssini
+**Filière :** Bachelor IDAI
+**Année :** 2025/2026
 
 ---
 
-## Description
-Ce dépôt contient les devoirs réalisés dans le cadre du cours de Python.
-Chaque devoir est organisé dans un dossier séparé.
+## 📌 Description
+
+Ce dépôt contient l’ensemble des travaux pratiques réalisés dans le cadre du module Python et développement web avec Django.
+
+Il regroupe :
+
+* les bases de Python
+* un projet d’analyse de données
+* la programmation orientée objet (POO)
+* un projet web avec Django
 
 ---
 
-## Devoir 1 - Les bases de Python
-**Dossier :** `devoir1/`  
-**Description :** 4 exercices sur les bases de Python : saisie utilisateur, conditions, boucles et listes.
+# 🧩 Partie 1 — Python
 
-| Fichier | Description | Notions utilisées |
-|--------|-------------|-------------------|
-| `ex1.py` | Contrôle d'âge : affiche la catégorie selon l'âge saisi | `input()`, `int()`, `if / elif / else` |
-| `ex2.py` | Carnet d'adresses : menu interactif pour gérer des contacts | `while`, `append()`, `enumerate()` |
-| `ex3.py` | Mot de passe : redemande tant que la saisie est incorrecte | `while`, `input()`, comparaison de chaînes |
-| `ex4.py` | Calculatrice : opérations de base avec gestion division par zéro | `float()`, `if / elif / else` |
+## 🔹 Devoir 1 : Les bases de Python
 
----
+**Dossier :** `devoir1/`
+**Description :** Exercices sur les bases de Python : conditions, boucles, listes et interaction utilisateur.
 
-## Devoir 2 - Analyseur de notes et cohérence pédagogique
-**Dossier :** `devoir2/`  
-**Description :** Programme complet d'analyse de données étudiantes en 4 parties.
-
-| Fichier | Description | Notions utilisées |
-|--------|-------------|-------------------|
-| `tp_analyseur_notes.py` | Nettoyage, structuration, statistiques et détection d'anomalies sur des notes | `list`, `dict`, `set`, `tuple`, récursivité |
-
-**Détail des parties :**
-- **Partie 1 :** Validation et nettoyage des données (erreurs, doublons)
-- **Partie 2 :** Structuration hiérarchique (matières, notes par étudiant, groupes)
-- **Partie 3 :** Calcul de moyennes avec une fonction récursive
-- **Partie 4 :** Détection d'anomalies (notes multiples, profil incomplet, groupe faible, écart élevé)
+| Fichier  | Description               | Notions utilisées   |
+| -------- | ------------------------- | ------------------- |
+| `ex1.py` | Contrôle d'âge            | `input()`, `if`     |
+| `ex2.py` | Carnet d'adresses         | `while`, `append()` |
+| `ex3.py` | Vérification mot de passe | boucle `while`      |
+| `ex4.py` | Calculatrice              | conditions          |
 
 ---
 
-## Devoir 3 - Programmation Orientée Objet (POO)
-**Dossier :** `devoir3/`  
-**Description :** Exercices sur les concepts fondamentaux de la POO en Python.
+## 🔹 Devoir 2 : Analyseur de notes
 
-| Fichier | Description | Notions utilisées |
-|--------|-------------|-------------------|
-| `21.py` | Création de classes et instances | `class`, `__init__`, `self` |
-| `22.py` | Attributs publics et protégés | `_attribut`, notation pointée |
-| `29.py` | Encapsulation et attributs privés | `__attribut`, getter, setter |
-| `32.py` | Properties et validation | `@property`, `@setter`, `isinstance` |
-| `33.py` | Héritage simple | `super()`, surcharge de méthodes |
-| `35.py` | Polymorphisme | méthodes surchargées, boucle sur objets |
-| `36.py` | Héritage multiple | `class Fille(Mere1, Mere2)` |
+**Dossier :** `devoir2/`
+
+**Description :** Application Python pour analyser des notes étudiantes.
+
+### Fonctionnalités :
+
+* Nettoyage des données
+* Organisation des informations
+* Calcul des moyennes
+* Détection d’anomalies
+
+### Notions utilisées :
+
+* `list`, `dict`, `set`, `tuple`
+* fonctions
+* récursivité
 
 ---
 
-## Structure du dépôt
+## 🔹 Devoir 3 : Programmation Orientée Objet (POO)
+
+**Dossier :** `devoir3/`
+
+**Description :** Exercices sur les concepts fondamentaux de la POO.
+
+| Fichier | Notions           |
+| ------- | ----------------- |
+| `21.py` | Classes et objets |
+| `22.py` | Attributs         |
+| `29.py` | Encapsulation     |
+| `32.py` | Properties        |
+| `33.py` | Héritage          |
+| `35.py` | Polymorphisme     |
+| `36.py` | Héritage multiple |
+
+---
+
+# 🌐 Partie 2 — TP Django
+
+## 🔹 Description
+
+Ce projet consiste à créer une application web avec Django en respectant l’architecture MVT (Model - View - Template).
+
+---
+
+## ⚙️ Étapes réalisées
+
+### ✔️ Installation
+
+* Installation de Python
+* Installation de Django avec pip
+
+### ✔️ Environnement virtuel
+
+Création et activation d’un environnement virtuel pour isoler les dépendances.
+
+### ✔️ Création du projet
+
+```bash
+django-admin startproject myproject
+```
+
+### ✔️ Création d’une application
+
+```bash
+python manage.py startapp myapp
+```
+
+---
+
+## 🏗️ Structure du projet Django
+
+```
+myproject/
+│
+├── manage.py
+├── myproject/
+│   ├── settings.py
+│   ├── urls.py
+│   ├── asgi.py
+│   └── wsgi.py
+│
+├── myapp/
+│   ├── views.py
+│   ├── models.py
+│   ├── urls.py
+│   └── admin.py
+│
+├── templates/
+├── static/
+```
+
+---
+
+## 🔄 Fonctionnement Django (MVT)
+
+* **Model** : gère la base de données
+* **View** : contient la logique
+* **Template** : affiche les pages HTML
+
+---
+
+## 🌍 Fonctionnalités réalisées
+
+* Création de pages web avec templates
+* Gestion des URLs
+* Formulaire (compteur de mots)
+* Intégration de Bootstrap
+* Gestion des fichiers statiques (CSS, JS)
+* Création de modèles et migrations
+* Interface d’administration Django
+* Authentification (inscription, connexion, déconnexion)
+
+---
+
+## ▶️ Lancer le projet Django
+
+```bash
+cd myproject
+python manage.py runserver
+```
+
+Puis ouvrir :
+
+```
+http://127.0.0.1:8000/
+```
+
+---
+
+# 📂 Structure globale du dépôt
+
 ```
 python/
 ├── devoir1/
-│   ├── ex1.py
-│   ├── ex2.py
-│   ├── ex3.py
-│   ├── ex4.py
-│   └── README.md
 ├── devoir2/
-│   ├── tp_analyseur_notes.py
-│   └── README.md
 ├── devoir3/
-│   ├── 21.py
-│   ├── 22.py
-│   ├── 29.py
-│   ├── 32.py
-│   ├── 33.py
-│   ├── 35.py
-│   ├── 36.py
-│   └── README.md
+├── myproject/
+├── myapp/
 └── README.md
 ```
 
 ---
 
-## Exécution
+# ▶️ Exécution
+
 ```bash
 # Devoir 1
 python devoir1/ex1.py
@@ -92,6 +192,21 @@ python devoir2/tp_analyseur_notes.py
 
 # Devoir 3
 python devoir3/21.py
+
+# Django
+python manage.py runserver
 ```
 
-> Nécessite Python 3.x — aucune bibliothèque externe requise.
+---
+
+## ✅ Remarque
+
+* Python 3.x requis
+* Django installé via pip
+* Aucun autre module externe nécessaire
+
+---
+
+## 🎯 Conclusion
+
+Ce dépôt regroupe les compétences acquises en Python et en développement web avec Django, notamment la programmation structurée, la POO et la création d’applications web complètes.
